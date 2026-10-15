@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Portfolio | Projects</title>
-    <meta name="description" content="View my academic and personal projects.">
+
+    <meta name="description"
+        content="Projects created by Rashmika.">
+
     <meta name="author" content="Rashmika">
 
     <link rel="stylesheet" href="style.css">
@@ -14,8 +17,9 @@
 
 <body>
 
-    <header>
-        <h1>My Projects</h1>
+    <header class="navbar">
+
+        <h1>Rashmika's Portfolio</h1>
 
         <nav aria-label="Main navigation">
             <ul>
@@ -24,54 +28,64 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button id="themeToggle" type="button">🌙 Dark Mode</button>
+
     </header>
 
     <main>
 
-        <section>
-            <h2>Projects</h2>
+        <section class="projects-section">
 
-            <article>
-                <h3>Personal Portfolio Website</h3>
-                <p>
-                    A responsive personal portfolio website created using
-                    semantic HTML5 and CSS.
-                </p>
-            </article>
+            <h2>My Projects</h2>
 
-            <article>
-                <h3>Student Management System</h3>
-                <p>
-                    A simple project designed to manage student information
-                    and academic details.
-                </p>
-            </article>
+            <div class="projects-grid">
 
-            <article>
-                <h3>Python Programming Project</h3>
-                <p>
-                    A beginner-friendly Python project demonstrating
-                    variables, conditions, loops and functions.
-                </p>
-            </article>
+                <article class="project-card">
+                    <h3>Personal Portfolio</h3>
 
-        </section>
+                    <p>
+                        A responsive personal portfolio website created
+                        using HTML and advanced CSS techniques.
+                    </p>
 
-        <section>
-            <h2>Technologies Used</h2>
+                    <a class="button" href="index.html">View Project</a>
+                </article>
 
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Python</li>
-            </ul>
+                <article class="project-card">
+                    <h3>Responsive Web Design</h3>
+
+                    <p>
+                        A responsive webpage designed using CSS Grid,
+                        Flexbox and media queries.
+                    </p>
+
+                    <a class="button" href="index.html">View Project</a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Student Learning Project</h3>
+
+                    <p>
+                        A learning project created to practice programming,
+                        web development and problem-solving skills.
+                    </p>
+
+                    <a class="button" href="index.html">View Project</a>
+                </article>
+
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 My Personal Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Rashmika. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>

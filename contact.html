@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>My Portfolio | Contact</title>
-    <meta name="description" content="Contact me through my accessible contact form.">
+
+    <meta name="description"
+        content="Contact Rashmika through the portfolio contact form.">
+
     <meta name="author" content="Rashmika">
 
     <link rel="stylesheet" href="style.css">
@@ -14,8 +17,9 @@
 
 <body>
 
-    <header>
-        <h1>Contact Me</h1>
+    <header class="navbar">
+
+        <h1>Rashmika's Portfolio</h1>
 
         <nav aria-label="Main navigation">
             <ul>
@@ -24,66 +28,37 @@
                 <li><a href="contact.html" aria-current="page">Contact</a></li>
             </ul>
         </nav>
+
+        <button id="themeToggle" type="button">🌙 Dark Mode</button>
+
     </header>
 
     <main>
 
-        <section>
-            <h2>Get in Touch</h2>
+        <section class="contact-section">
 
-            <p>
-                Please fill out the form below to contact me.
-            </p>
+            <h2>Contact Me</h2>
 
-            <form action="#" method="post" aria-label="Contact form">
+            <form class="contact-form">
 
-                <div>
-                    <label for="name">Full Name:</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        autocomplete="name">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
 
-                <br>
-
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        required
-                        autocomplete="email">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
-                <br>
-
-                <div>
-                    <label for="subject">Subject:</label>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        required>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
                 </div>
 
-                <br>
-
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        required></textarea>
-                </div>
-
-                <br>
-
-                <button type="submit">Send Message</button>
+                <button class="submit-button" type="submit">
+                    Send Message
+                </button>
 
             </form>
 
@@ -92,8 +67,11 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 My Personal Portfolio. All rights reserved.</p>
+        <p>&copy; 2026 Rashmika. All Rights Reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
